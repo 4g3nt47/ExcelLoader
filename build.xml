@@ -1,0 +1,28 @@
+<project name="excelloader" default="build" basedir=".">
+  <target name="init">
+    <property name="src.dir" value="src"/>
+    <property name="out.dir" value="bin"/>
+    <property name="lib.dir" value="lib"/>
+    <path id="lib.classpath">
+      <fileset dir="${lib.dir}"/>
+      <fileset dir="/opt/java/lib"/>
+    </path>
+    <property name="jar.file" value="excelloader.jar"/>
+    <property name="release.version" value="11"/>
+  </target>
+  <target name="prepare" depends="init">
+    <mkdir dir="${out.dir}"/>
+    <mkdir dir="${lib.dir}"/>
+  </target>
+  <target name="clean" depends="init">
+    <delete dir="${out.dir}"/>
+    <delete file="${dep.all.jar}"/>
+  </target>
+  <target name="build" depends="prepare">
+    <javac debug="true" debuglevel="lines,vars,source" release="${release.version}" srcdir="${src.dir}" destdir="${out.dir}" classpathref="lib.classpath"/>
+  </target>
+  <target name="jar" depends="build">
+    <delete file="${jar.file}"/>
+    <jar jarfile="${jar.file}" basedir="${out.dir}"/>
+  </target>
+</project>
