@@ -1,6 +1,6 @@
 # ExcelLoader
 
-ExcelLoader is a simple Java library I made to make reading data from excel files easier. It uses the powerful Apache POI library to load excel and process excel files. Cells whose values are dynamically generated using a formula are resolved at runtime.
+ExcelLoader is a simple Java library I made to make reading data from excel files easier. It uses the powerful Apache POI library to load and process excel files. Cells whose values are dynamically generated using a formula are resolved at runtime.
 
 ## Installation
 
