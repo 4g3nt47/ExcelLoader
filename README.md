@@ -19,6 +19,9 @@ ExcelLoader is a simple Java library I made to make reading data from excel file
 ## Demo
 
 ```java
+// Import
+import com.umarabdul.excelloader.ExcelLoader;
+
 // A simple demo of using the library.
 ExcelLoader ld = new ExcelLoader(new File("sample.xlsx"), 0);
 if (ld.parse()){
