@@ -4,8 +4,10 @@ ExcelLoader is a simple Java library I made to make reading data from excel file
 
 ## Installation
 
-* `$ git clone https://github.com/4g3nt47/ExcelLoader.git`
-* `$ cd ExcelLoader`
+```bash
+$ git clone https://github.com/4g3nt47/ExcelLoader.git
+$ cd ExcelLoader
+```
 * Copy `excelloader.jar` to your classpath.
 
 ## Build from source
