@@ -2,14 +2,6 @@
 
 ExcelLoader is a simple Java library I made to make reading data from excel files easier. It uses the powerful Apache POI library to load and process excel files. Cells whose values are dynamically generated using a formula are resolved at runtime.
 
-## Installation
-
-```bash
-$ git clone https://github.com/4g3nt47/ExcelLoader.git
-$ cd ExcelLoader
-```
-* Copy `excelloader.jar` to your classpath.
-
 ## Build from source
 
 * `$ git clone https://github.com/UmarAbdul01/ExcelLoader.git`
